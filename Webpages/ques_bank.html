@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../assets/css/ques_bank.css">
+    
+    <title>Coursekit | Question Bank</title>
+  </head>
+  <body>
+
+    <!-- <button type="button" id="sidebarCollapse" class="addMargin btn btn-md">
+      <i class="fas fa-align-left"></i>
+  
+    </button> -->
+    <ul class="nav justify-content-end ">
+      <li class="nav-item">
+        <a class="nav-link active" href="#"><b><span id="displayName"></span></b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="far fa-bell "></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-cog "></i></a>
+      </li>
+      <li class="nav-item" id="logout">
+        <a class="nav-link"><i class="fas fa-sign-out-alt "></i></a>
+      </li>
+    </ul>
+  
+    <div class="wrapper">
+
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <p>Monktree</p>
+        </div>
+        <ul class="list-unstyled components mt-4">
+          <li class="inactive" id="nav-dashboard">
+            <a href="dashboard.html"> <b>Dashboard</b> </a>
+          </li>
+          <li class="inactive" id="nav-dashboard">
+            <a href="user.html"> <b>User Profile</b> </a>
+          </li>
+          <li class="inactive" id="nav-dashboard">
+            <a href="notifications.html"> <b>Notifications</b> </a>
+          </li>
+          <li class="inactive" id="nav-dashboard">
+            <a href="table.html"> <b>Leader Board</b> </a>
+          </li>
+          <li class="inactive" id="nav-dashboard">
+            <a href="courses.html"> <b>Courses</b> </a>
+          </li>
+          <li class="active" id="nav-dashboard">
+            <a href="ques_bank.html"> <b>Assignments</b> </a>
+          </li>
+          <li class="inactive" id="nav-dashboard">
+            <a href="result.html"> <b>Result & Certificates</b> </a>
+          </li>
+          
+  
+          
+          <br><br><br><br><br>
+          <hr>
+        </ul>
+       
+      </nav>
+    </div>
+ 
+      <div class="search mt-5 mb-5">
+      <form action="">
+        <div class="input-group mb-4">
+          <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon5" class="form-control">
+          <div class="input-group-append">
+            <button id="button-addon5" type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+      <div class="row justify-content-around addMargin text" id="container">
+    
+        <div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+          <img class="heading" src="https://sitegalleria.com/wp-content/uploads/2019/08/Web-Development-Company-Bangalore.jpeg">
+        <div class="card-body pt-4 pb-2">
+          <h5 class="card-title mt-4 mb-4"> <b>Web Dev Bootcamp 2020</b> </h5><a href="details.html" class="card-action"> <i class="fas fa-unlock fa-lg"></i></a>
+          <div class="row">
+            <div class="col-3">
+              <span> <b>6</b> </span>
+              <p>Tests</p>
+            </div>
+            <div class="col-4">
+              <span><b>80 min</b></span>
+              <p>Duration</p>
+            </div>
+            <div class="col-5">
+              <span><b>1/6</b></span>
+              <p>Completed</p>
+            </div>
+          </div>
+          <div class="by mt-4">
+          <b>By <span id="creator"> <i>Shubhangi</i> </span></b>
+          <p><span id="date">15th Oct 2020</span></p>
+        </div>
+        </div>  
+      </div>
+    
+      <div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+        
+    <img class="heading" src="https://www.techdatasolution.co.in/images/blog/81/T/benefits-of-pythons.jpg">
+    <div class="card-body pt-4 pb-2">
+      <h5 class="card-title mt-4 mb-4"><b>Python</b> </h5><a href="#" class="card-action"> <i class="fas fa-lock fa-lg"></i></a>
+      <div class="row">
+        <div class="col-3">
+          <span> <b>12</b> </span>
+          <p>Tests</p>
+        </div>
+        <div class="col-4">
+          <span><b>140 min</b></span>
+          <p>Duration</p>
+        </div>
+        <div class="col-5">
+          <span><b>Locked</b></span>
+          <p style="color: rgb(170, 167, 167);">Completed</p>
+        </div>
+      </div>
+      <div class="by mt-4">
+      <b>By <span id="creator"><i>Aarya</i></span></b>
+      <p><span id="date">06th Oct 2020</span></p>
+    </div>
+    </div>
+  </div>
+    <div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+      <img class="heading" src="https://media.onlinefreecourse.net/udemy/2018/08/26052815/wEI120.jpg">
+      <div class="card-body pt-4 pb-2">
+      <h5 class="card-title mt-4 mb-4"> <b>Unity Game Development</b> </h5><a href="#" class="card-action"> <i class="fas fa-lock fa-lg"></i></a>
+      <div class="row">
+        <div class="col-3">
+          <span> <b>18</b> </span>
+          <p>Tests</p>
+        </div>
+        <div class="col-4">
+          <span><b>160 min</b></span>
+          <p>Duration</p>
+        </div>
+        <div class="col-5">
+          <span><b>Locked</b></span>
+          <p style="color: rgb(170, 167, 167);">Completed</p>
+        </div>
+      </div>
+      <div class="by mt-4">
+      <b>By <span id="creator"><i>Neha</i></span></b>
+      <p><span id="date">27th August 2020</span></p>
+      </div>
+      </div>
+      </div>
+</div>
+
+<div class="row justify-content-around addMargin text" id="container">
+  <div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+   <img class="heading" src="data:image/jpeg;base64,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">
+      <div class="card-body pt-4 pb-2">
+        <h5 class="card-title mt-4 mb-4"> <b>Modern React with Redux</b> </h5><a href="#" class="card-action"> <i class="fas fa-lock fa-lg"></i></a>
+        <div class="row">
+          <div class="col-3">
+            <span> <b>7</b> </span>
+            <p>Tests</p>
+          </div>
+          <div class="col-4">
+            <span><b>80 min</b></span>
+            <p>Duration</p>
+          </div>
+          <div class="col-5">
+            <span><b>Locked</b></span>
+            <p style="color: rgb(170, 167, 167);">Completed</p>
+          </div>
+        </div>
+        <div class="by mt-4">
+        <b>By <span id="creator"><i>Aditya</i></span></b>
+        <p><span id="date">24th August 2020</span></p>
+      </div>
+      </div>
+    </div>
+<div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+  <img class="heading" src="https://5.imimg.com/data5/IK/JX/MY-6896255/machine-learning-500x500.png">
+<div class="card-body pt-4 pb-2">
+  <h5 class="card-title mt-4 mb-4"><b>ML with Python</b></h5><a href="#" class="card-action"> <i class="fas fa-lock fa-lg"></i></a>
+  <div class="row">
+    <div class="col-3">
+      <span> <b>9</b> </span>
+      <p>Tests</p>
+    </div>
+    <div class="col-4">
+      <span><b>60 min</b></span>
+      <p>Duration</p>
+    </div>
+    <div class="col-5">
+      <span><b>Locked</b></span>
+      <p style="color: rgb(170, 167, 167);">Completed</p>
+    </div>
+  </div>
+  <div class="by mt-4">
+  <b>By <span id="creator"><i>Anshika</i></span></b>
+  <p><span id="date">12th Sept 2020</span></p>
+</div>
+</div>
+</div>
+<div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+
+
+<img class="heading" src="https://pbs.twimg.com/media/DeS35ADVAAEkVb8.jpg">
+<div class="card-body pt-4 pb-2">
+  <h5 class="card-title mt-4 mb-4"><b>Advanced CSS and Sass</b> </h5><a href="#" class="card-action"> <i class="fas fa-lock fa-lg"></i></a>
+  <div class="row">
+    <div class="col-3">
+      <span> <b>16</b> </span>
+      <p>Tests</p>
+    </div>
+    <div class="col-4">
+      <span><b>110 min</b></span>
+      <p>Duration</p>
+    </div>
+    <div class="col-5">
+      <span><b>Locked</b></span>
+      <p style="color: rgb(170, 167, 167);">Completed</p>
+    </div>
+  </div>
+  <div class="by mt-4">
+  <b>By <span id="creator"><i>Ishita</i></span></b>
+  <p><span id="date">01 July 2020</span></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row justify-content-around addMargin text" id="container">
+  <div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+    <img class="heading" src="https://media.onlinecoursebay.com/2019/07/26063941/2458774_1f28.jpg">
+  <div class="card-body pt-4 pb-2">
+    <h5 class="card-title mt-4 mb-4"><b>Dynamic Programming</b> </h5><a href="#" class="card-action"> <i class="fas fa-lock fa-lg"></i></a>
+    <div class="row">
+      <div class="col-3">
+        <span> <b>5</b> </span>
+        <p>Tests</p>
+      </div>
+      <div class="col-4">
+        <span><b>50 min</b></span>
+        <p>Duration</p>
+      </div>
+      <div class="col-5">
+        <span><b>Locked</b></span>
+        <p style="color: rgb(170, 167, 167);">Completed</p>
+      </div>
+    </div>
+    <div class="by mt-4">
+    <b>By <span id="creator"><i>Rahul</i></span></b>
+    <p><span id="date">19th Oct 2020</span></p>
+  </div>
+  </div>
+</div>
+<div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+  <img class="heading" src="https://learnprogramming.academy/wp-content/uploads/2020/10/533682_c10c_4-2.jpg">
+<div class="card-body pt-4 pb-2">
+  <h5 class="card-title mt-4 mb-4"><b>Java Programming</b> </h5><a href="#" class="card-action"> <i class="fas fa-lock fa-lg"></i></a>
+  <div class="row">
+    <div class="col-3">
+      <span> <b>10</b> </span>
+      <p>Tests</p>
+    </div>
+    <div class="col-4">
+      <span><b>80 min</b></span>
+      <p>Duration</p>
+    </div>
+    <div class="col-5">
+      <span><b>Locked</b></span>
+      <p style="color: rgb(170, 167, 167);">Completed</p>
+    </div>
+  </div>
+  <div class="by mt-4">
+  <b>By <span id="creator"><i>Shubhangi</i></span></b>
+  <p><span id="date">13th Sept 2020</span></p>
+</div>
+</div>
+</div>
+<div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+<img class="heading" src="https://www.datadriveninvestor.com/wp-content/uploads/2020/01/softwaredevelopment.png">
+<div class="card-body pt-4 pb-2">
+<h5 class="card-title mt-4 mb-4"> <b> Software Development </b></h5><a href="#" class="card-action"> <i class="fas fa-lock fa-lg"></i></a>
+<div class="row">
+  <div class="col-3">
+    <span> <b>5</b> </span>
+    <p>Tests</p>
+  </div>
+  <div class="col-4">
+    <span><b>150 min</b></span>
+    <p>Duration</p>
+  </div>
+  <div class="col-5">
+    <span><b>Locked</b></span>
+    <p style="color: rgb(170, 167, 167);">Completed</p>
+  </div>
+</div>
+<div class="by mt-4">
+<b>By <span id="creator"><i>XYZ</i></span></b>
+<p><span id="date">13th March 2019</span></p>
+</div>
+</div>
+</div>
+</div>
+      
+      <!-- <div class="row justify-content-around addMargin text" id="container">
+        <div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+          <img class="heading" src="https://kimscrane.com/shop/5135-large_default/glassine-paper-aka-kite-paper-cherry-red-color.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Topic </h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . </p>
+          <b>By <span id="creator">XYZ</span></b>
+          <p><span id="date">13th March 2019</span></p>
+        </div>
+      </div>
+      <div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+        <img class="heading" src="https://kimscrane.com/shop/5135-large_default/glassine-paper-aka-kite-paper-cherry-red-color.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Topic </h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . </p>
+          <b>By <span id="creator">XYZ</span></b>
+          <p><span id="date">13th March 2019</span></p>
+        </div>
+      </div>
+      <div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+        <img class="heading" src="https://kimscrane.com/shop/5135-large_default/glassine-paper-aka-kite-paper-cherry-red-color.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Topic </h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . </p>
+          <b>By <span id="creator">XYZ</span></b>
+          <p><span id="date">13th March 2019</span></p>
+        </div>
+      </div>
+      </div>
+  
+      <div class="row justify-content-around addMargin text" id="container">
+        <div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+          <img class="heading" src="https://kimscrane.com/shop/5135-large_default/glassine-paper-aka-kite-paper-cherry-red-color.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Topic </h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . </p>
+          <b>By <span id="creator">XYZ</span></b>
+          <p><span id="date">13th March 2019</span></p>
+        </div>
+      </div>
+      <div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+        <img class="heading" src="https://kimscrane.com/shop/5135-large_default/glassine-paper-aka-kite-paper-cherry-red-color.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Topic </h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . </p>
+          <b>By <span id="creator">XYZ</span></b>
+          <p><span id="date">13th March 2019</span></p>
+        </div>
+      </div>
+      <div class="card col-8 col-lg-3 col-xl-3  shadow" style="width: 20rem;">
+        <img class="heading" src="https://kimscrane.com/shop/5135-large_default/glassine-paper-aka-kite-paper-cherry-red-color.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Topic </h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . </p>
+          <b>By <span id="creator">XYZ</span></b>
+          <p><span id="date">13th March 2019</span></p>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div> 
+    </div>
+      
+       
+     
+  
+    </div> -->
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="../assets/js/ques_bank.js"></script>
+  </body>
+</html>
